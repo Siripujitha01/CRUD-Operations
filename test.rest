@@ -1,0 +1,35 @@
+
+GET http://localhost:3000/friends
+
+### GET friend
+
+GET http://localhost:3000/friends/james
+
+### ADD friend
+POST http://localhost:3000/addfriend
+Content-Type: application/json
+
+{
+  "name" : "banana",
+  "status" : "friend"
+}
+
+### update a friend
+
+PATCH http://localhost:3000/changestatus
+Content-Type: application/json
+
+{
+  "name":"tomato",
+  "newStatus":"friend"
+}
+
+### DELETE a friend
+
+DELETE http://localhost:3000/friends
+Content-Type: :application/json
+
+{
+  "name":"banana"
+}
+
